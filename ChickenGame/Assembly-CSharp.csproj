@@ -53,9 +53,9 @@
     <UnityVersion>2020.3.27f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets/RandomMovement.cs" />
-    <Compile Include="Assets/Polytope Studio/Lowpoly Medieval Demos/Environment_Free/MouseLook.cs" />
-    <Compile Include="Assets/Polytope Studio/Lowpoly Medieval Demos/Environment_Free/PlayerMovement.cs" />
+    <Compile Include="Assets/Scripts/MouseLook.cs" />
+    <Compile Include="Assets/Scripts/PlayerMovement.cs" />
+    <Compile Include="Assets/Scripts/ThirdPersonMovement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Polytope Studio/Lowpoly Medieval Environments/Sources/Shaders/PT_Vegetation_Plants_Shader.shader" />
@@ -671,6 +671,12 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
