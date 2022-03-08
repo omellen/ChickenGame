@@ -53,20 +53,27 @@
     <UnityVersion>2020.3.27f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/MouseLook.cs" />
-    <Compile Include="Assets/Scripts/PlayerMovement.cs" />
     <Compile Include="Assets/Scripts/ThirdPersonMovement.cs" />
+    <Compile Include="Assets/Scripts/MouseLook.cs" />
+    <Compile Include="Assets/IL3DN/Scripts/IL3DN_SimpleMouseLook.cs" />
+    <Compile Include="Assets/IL3DN/Scripts/IL3DN_Wind.cs" />
+    <Compile Include="Assets/IL3DN/Scripts/IL3DN_SimpleFPSController.cs" />
+    <Compile Include="Assets/IL3DN/Scripts/IL3DN_ChangeWalkingSound.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Polytope Studio/Lowpoly Medieval Environments/Sources/Shaders/PT_Vegetation_Plants_Shader.shader" />
+    <None Include="Assets/IL3DN/Shaders/IL3DN_Pine.shader" />
     <None Include="Assets/Polytope Studio/Lowpoly Medieval Environments/Sources/Shaders/PT_Vegetation_Opaque_Shader_VS.shader" />
     <None Include="Assets/Polytope Studio/Lowpoly Medieval Environments/Sources/Shaders/PT_Vegetation_Opaque_Shader.shader" />
     <None Include="Assets/Polytope Studio/Lowpoly Medieval Environments/Sources/Shaders/PT_Vegetation_Foliage_Shader.shader" />
+    <None Include="Assets/IL3DN/Shaders/IL3DN_Branch.shader" />
     <None Include="Assets/Polytope Studio/Lowpoly Medieval Environments/Sources/Shaders/PT_Water_Shader.shader" />
     <None Include="Assets/Polytope Studio/Lowpoly Medieval Environments/Sources/Shaders/PT_Vegetation_Flowers_Shader.shader" />
     <None Include="Assets/Polytope Studio/Lowpoly Medieval Environments/Sources/Shaders/PT_Rock_Shader_VS.shader" />
     <None Include="Assets/Polytope Studio/Lowpoly Medieval Environments/Sources/Shaders/PT_Vegetation_Plants_Shader_VS.shader" />
+    <None Include="Assets/IL3DN/Shaders/IL3DN_Grass.shader" />
     <None Include="Assets/Polytope Studio/Lowpoly Medieval Environments/Sources/Shaders/PT_Vegetation_Flowers_Shader_VS.shader" />
+    <None Include="Assets/IL3DN/Shaders/IL3DN_OpaqueSurface.shader" />
     <None Include="Assets/Polytope Studio/Lowpoly Medieval Environments/Sources/Shaders/PT_Rock_Shader.shader" />
     <None Include="Assets/Polytope Studio/Lowpoly Medieval Environments/Sources/Shaders/VS_indirect.cginc" />
     <None Include="Assets/Polytope Studio/Lowpoly Medieval Environments/Sources/Shaders/PT_Vegetation_Foliage_Shader_VS.shader" />
@@ -642,8 +649,14 @@
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -671,12 +684,6 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

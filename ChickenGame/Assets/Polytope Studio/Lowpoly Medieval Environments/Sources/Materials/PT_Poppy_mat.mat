@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PT_Poppy_mat
-  m_Shader: {fileID: 4800000, guid: 69e2e8c890f00e04e945ccd10e764372, type: 3}
+  m_Shader: {fileID: 10601, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _CUSTOMWIND_ON _TRANSLUCENCYONOFF_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
@@ -25,7 +25,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 500, y: 500}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
         m_Texture: {fileID: 0}
@@ -43,9 +43,13 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _GlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 500, y: 500}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: e0eab39b8993b684dbb9800cf1151d33, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 500, y: 500}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
@@ -58,6 +62,14 @@ Material:
     - _ParallaxMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ShadowOffset:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 500, y: 500}
+        m_Offset: {x: 0, y: 0}
+    - _TranslucencyMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 500, y: 500}
         m_Offset: {x: 0, y: 0}
     - _texcoord:
         m_Texture: {fileID: 0}
@@ -82,8 +94,10 @@ Material:
     - _Mode: 3
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _Shininess: 0.078125
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
+    - _SquashAmount: 1
     - _SrcBlend: 1
     - _TRANSLUCENCYONOFF: 1
     - _TransAmbient: 0.2
@@ -104,3 +118,6 @@ Material:
     - _FLOWERSCOLOR: {r: 4, g: 0, b: 0, a: 0}
     - _GroundColor: {r: 0.12978768, g: 0.49056602, b: 0.09487361, a: 1}
     - _TopColor: {r: 0.3505436, g: 0.5754717, b: 0.3338822, a: 1}
+    - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
