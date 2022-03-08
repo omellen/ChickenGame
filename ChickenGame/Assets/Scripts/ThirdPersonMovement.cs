@@ -8,6 +8,10 @@ public class ThirdPersonMovement : MonoBehaviour
     public Transform cam;
     public Rigidbody rigid;
 
+    public GameObject player;
+    public GameObject grass;
+    private float range = 2;
+
     public float speed = 6f;
 
     public float turnSmoothTime = 0.1f;
@@ -31,18 +35,35 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
-            
+
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
+            
+
 
             animator.SetBool("Run", true);
-        } else
+        }
+        else
         {
             animator.SetBool("Run", false);
         }
 
+        if (Vector3.Distance(player.transform.position, grass.transform.position) < range)
+        {
+            StartCoroutine(Eat());
+            
+        }
 
+
+
+        IEnumerator Eat()
+        {
+            animator.SetBool("Eat", true);
+            yield return new WaitForSeconds(3);
+            Destroy(grass);
+            animator.SetBool("Eat", false);
+        }
     }
 }

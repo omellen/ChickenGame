@@ -7,23 +7,7 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ChickenGame" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Polytope Studio" expanded="True">
-                <Node name="Lowpoly Medieval Demos" expanded="True">
-                  <Node name="Environment_Free" expanded="True" />
-                </Node>
-                <Node name="Lowpoly Medieval Environments" expanded="True">
-                  <Node name="Sources" expanded="True">
-                    <Node name="Shaders" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
-              <Node name="Scripts" expanded="True">
-                <Node name="MouseLook.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="ChickenGame" expanded="True" selected="True" />
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
